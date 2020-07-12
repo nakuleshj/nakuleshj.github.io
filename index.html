@@ -1,0 +1,193 @@
+<html>
+<head>
+    <title>Nakulesh Jayakrishnan</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" href="nj-icon.png" type="image/x-icon">
+    <style>
+        .jumbotron {
+            background: #2F3649 no-repeat center;
+            background-size: cover;
+        }
+        .icon{
+            padding: 0px 20px;
+            padding-top: 10px;
+        }
+        .resume-button{
+            padding:10px;
+            border: white solid 2px;
+            color:white;
+            text-decoration: none;
+        }
+        .resume-button:hover{
+            padding:10px;
+            border: white solid 2px;
+            color: #2F3649;
+            background: white;
+            text-decoration: none;
+        }
+        .btn-secondary{
+            background-color: #2F3649;
+        }
+        .btn-secondary:hover{
+            background-color: white;
+            border: #2F3649 solid 2px;
+            color: #2F3649;
+        }
+        *{
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+          $('[data-toggle="popover"]').popover();
+        });
+        $(document).ready(function(){
+            $('#drip-and-drizzle').click(function(){
+                $(".modal-title").text('Drip & Drizzle');
+                $('#desc').text("This dessert shop application allows a user to order desserts listed in the catalog or place custom orders.");
+                $('#playStoreLink').html('<a href="https://play.google.com/store/apps/details?id=com.nakuleshj.dripanddrizzle" class="btn btn-secondary">Get it on Play Store</a>');
+                $('#features').html("<li>Google SignIn</li><li>Utilizes Provider State Management</li><li>Firebase Backend</li><li>FCM Push Notifications</li><li>Payments through UPI</li>");
+            });
+            $('#stockedUp').click(function(){
+                $(".modal-title").text('StockedUp');
+                $('#desc').text("StockedUp is an inventory management application. Adding and updating product stock is done with an inbuilt Barcode scanner");
+                //$('#playStoreLink').html('<a href="https://play.google.com/store/apps/details?id=com.nakuleshj.dripanddrizzle" class="btn btn-secondary">Get it on Play Store</a>');
+                $('#features').html("<li>Barcode Scanner</li><li>Search functionality</li><li>Firebase Backend</li><li>Firebase Authentication</li>");
+            });
+            $('#dd-admin').click(function(){
+                $(".modal-title").text('Drip & Drizzle Admin');
+                $('#desc').text("The Admin application allows management of catalog items. Facilitates order management.");
+                //$('#playStoreLink').html('<a href="https://play.google.com/store/apps/details?id=com.nakuleshj.dripanddrizzle" class="btn btn-secondary">Get it on Play Store</a>');
+                $('#features').html("<li>Add new dessert items</li><li>Update catalog</li><li>FCM Push Notifications</li><li>Manage Orders</li><li>Upload images to Firebase storage</li>");
+            });
+            $('#hiit-timer').click(function(){
+                $(".modal-title").text('HIIT Timer');
+                $('#desc').text("Timer application for timing High Intensity Interval Training workouts.");
+                //$('#playStoreLink').html('<a href="https://play.google.com/store/apps/details?id=com.nakuleshj.dripanddrizzle" class="btn btn-secondary">Get it on Play Store</a>');
+                $('#features').html("<li>Customizable intervals</li><li>Easily visible timer</li><li>Visualized timer progress</li><li>Sounds to indicate the start of an interval</li>");
+            });
+            $('#bmi-calculator').click(function(){
+                $(".modal-title").text('BMI Calculator');
+                $('#desc').text("Application takes few inputs from the user to output the BMI and its interpretation");
+                //$('#playStoreLink').html('<a href="https://play.google.com/store/apps/details?id=com.nakuleshj.dripanddrizzle" class="btn btn-secondary">Get it on Play Store</a>');
+                $('#features').html("<li>Optimized UI</li><li>Slider and buttons for inputs to minimize input-error.</li><li>Calculates BMI</li><li>Provides interpretation of the calculated BMI</li>");
+            });
+            $('#friends-trivia').click(function(){
+                $(".modal-title").text('Friends Trivia');
+                $('#desc').text("Trivia application that tests your knowledge of the popular 90s TV Show, Friends.");
+                //$('#playStoreLink').html('<a href="https://play.google.com/store/apps/details?id=com.nakuleshj.dripanddrizzle" class="btn btn-secondary">Get it on Play Store</a>');
+                $('#features').html("<li>Color-scheme inspired by Friends</li><li>Scorekeeping</li><li>Question result indicators</li>");
+            });
+        });
+        </script>
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h1 style="color:white; font-family: 'Bebas Neue', cursive;font-size: 58px;" class="animate__animated animate__fadeIn">Hi, I'm Nakulesh Jayakrishnan</h1>
+        <h3 style="color:white; font-family: 'Open Sans', sans-serif;" class="animate__animated animate__fadeInUp">I build beautiful cross-platform applications with Google's Flutter SDK.</h3>
+        <br>
+        <a href="https://github.com/nakuleshj/"  target="_blank"><i class="fa fa-github icon animate__animated animate__fadeInLeft" style="font-size:48px;color:white"></i></a>
+        <a href="#" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="nakuleshj1998@gmail.com"><i class="fa fa-envelope icon animate__animated animate__zoomIn" style="font-size:48px;color:white"></i></a>
+        <a href="" target="_blank"><i class="fa fa-linkedin icon animate__animated animate__fadeInRight" style="font-size:48px;color:white"></i></a><br><br><br>
+        <a href="resumeNakuleshJ.pdf" target="_blank" class="resume-button" style=" font-family: 'Open Sans', sans-serif;font-size:18px;"><span class="animate__animated animate__zoomIn">Download Resume</span></a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 style="text-align: center;font-family: 'Bebas Neue', cursive;color:#2F3649">Projects</h1>
+                <hr color="#2F3649">
+            </div>
+        </div>
+        <div class="row">
+             <div class="col-lg-6">
+                 <div class="card mx-auto d-block animate__animated animate__slideInLeft" style="width:260px">
+                    <img class="card-img-top" src="drip_and_drizzle.gif" alt="Card image" width="260" height="500">
+                    <div class="card-body">
+                      <h4 class="card-title" style="font-family: 'Bebas Neue', cursive;font-size:30px;">Drip & Drizzle</h4>
+                      <button class="btn btn-secondary" id='drip-and-drizzle' data-toggle="modal" data-target="#infoModal">More Info</button>&nbsp;&nbsp;<a href="https://github.com/nakuleshj/dripanddrizzle" target="_blank" class="btn btn-secondary">Repository</a>
+                    </div>
+                  </div>
+                </div>
+             <div class="col-lg-6">
+                 <div class="card mx-auto d-block animate__animated animate__slideInRight" style="width:260px">
+                    <img class="card-img-top" src="stockedUp.gif" alt="Card image" width="260" height="500">
+                    <div class="card-body">
+                        <h4 class="card-title" style="font-family: 'Bebas Neue', cursive;font-size:30px;">Stocked Up</h4>
+                        <button class="btn btn-secondary" id='stockedUp' data-toggle="modal" data-target="#infoModal">More Info</button>&nbsp;&nbsp;<a href="https://github.com/nakuleshj/stocked_up" target="_blank" class="btn btn-secondary">Repository</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card mx-auto d-block animate__animated animate__slideInLeft" style="width:260px">
+                    <img class="card-img-top" src="dd-admin.gif" alt="Card image" width="260" height="500">
+                    <div class="card-body">
+                        <h4 class="card-title" style="font-family: 'Bebas Neue', cursive;font-size:30px;">Drip&Drizzle Admin</h4>
+                        <button class="btn btn-secondary" id='dd-admin' data-toggle="modal" data-target="#infoModal">More Info</button>&nbsp;&nbsp;<a href="https://github.com/nakuleshj/dd_admin" target="_blank" class="btn btn-secondary">Repository</a>
+                    </div>
+                </div>
+             </div>
+            <div class="col-lg-6">
+                <div class="card mx-auto d-block animate__animated animate__slideInRight" style="width:260px">
+                   <img class="card-img-top" src="hiit-pal.gif" alt="Card image" width="260" height="500">
+                   <div class="card-body">
+                       <h4 class="card-title" style="font-family: 'Bebas Neue', cursive;font-size:30px;">HIIT Timer</h4>
+                       <button class="btn btn-secondary" id='hiit-timer' data-toggle="modal" data-target="#infoModal">More Info</button>&nbsp;&nbsp;<a href="https://github.com/nakuleshj/hiit_pal" target="_blank" class="btn btn-secondary">Repository</a>
+                   </div>
+               </div>
+           </div>
+            
+       </div>
+       <br>
+       <div class="row">
+        <div class="col-lg-6">
+            <div class="card mx-auto d-block animate__animated animate__slideInLeft" style="width:260px">
+               <img class="card-img-top" src="bmi-calculator.gif" alt="Card image" width="260" height="500">
+               <div class="card-body">
+                   <h4 class="card-title" style="font-family: 'Bebas Neue', cursive;font-size:30px;">BMI Calculator</h4>
+                   <button class="btn btn-secondary" id='bmi-calculator' data-toggle="modal" data-target="#infoModal">More Info</button>&nbsp;&nbsp;<a href="https://github.com/nakuleshj/bmi_calculator" target="_blank" class="btn btn-secondary">Repository</a>
+               </div>
+           </div>
+       </div>
+        <div class="col-lg-6">
+           <div class="card mx-auto d-block animate__animated animate__slideInRight" style="width:260px">
+               <img class="card-img-top" src="friends-trivia.gif" alt="Card image" width="260" height="500">
+               <div class="card-body">
+                   <h4 class="card-title" style="font-family: 'Bebas Neue', cursive;font-size:30px;">Friends Trivia</h4>
+                   <button class="btn btn-secondary" id='friends-trivia' data-toggle="modal" data-target="#infoModal">More Info</button>&nbsp;&nbsp;<a href="https://github.com/nakuleshj/friends_trivia" target="_blank" class="btn btn-secondary">Repository</a>
+               </div>
+           </div>
+        </div>
+   </div>
+   <div class="modal fade" id="infoModal">
+    <div class="modal-dialog">
+      <div class="modal-content" id="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title" style="font-family: 'Bebas Neue', cursive;color:#2F3649;font-size: 30;"></h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p id="desc"></p>
+            <p><b>Features:</b></p>
+            <ul id='features'>
+
+            </ul>
+            <span id='playStoreLink'></span>
+          </div>
+         
+      </div>
+    </div>
+  </div>
+    </div>
+</body>
+</html>
